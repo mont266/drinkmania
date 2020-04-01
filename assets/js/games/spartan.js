@@ -4,7 +4,7 @@ var timer;
 var c = 60;
 
 function start() {
-    if (shots < 100) {
+    if (shots < 300) {
         clearInterval(timer)
         timer = setInterval(( ) =>{
           updateUi()
@@ -17,11 +17,10 @@ function pause() {
 function updateUi() {
   document.getElementById("seconds").innerHTML = --c;
   if (c == 0) {
-      if (shots == 99) {
+      if (shots == 299) {
         shots = shots + 1;
         pause();
-        document.getElementById("seconds").innerHTML = "You've Completed Centurions!";
-        document.getElementById("donate").innerHTML = "If you enjoyed this! Please consider buying me a beer!";
+        document.getElementById("seconds").innerHTML = "You've Conquered Sparta!";
       } else {
         shots = shots + 1;
         c = 60;
