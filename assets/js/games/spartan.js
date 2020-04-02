@@ -11,9 +11,15 @@ function start() {
         }, 1000);
     }
 }
+
+function playSound() {
+  document.getElementById("audiotag1").play();
+}
+
 function pause() {
   clearInterval(timer)
 }
+
 function updateUi() {
   document.getElementById("seconds").innerHTML = --c;
   if (c == 0) {
@@ -22,6 +28,7 @@ function updateUi() {
         pause();
         document.getElementById("seconds").innerHTML = "You've Conquered Sparta!";
       } else {
+        audio.play();
         shots = shots + 1;
         c = 60;
       }

@@ -11,6 +11,10 @@ function start() {
         }, 1000);
     }
 }
+
+function playSound() {
+  document.getElementById("audiotag1").play();
+}
 function pause() {
   clearInterval(timer)
 }
@@ -23,6 +27,7 @@ function updateUi() {
         document.getElementById("seconds").innerHTML = "You've Completed Centurions!";
         document.getElementById("donate").innerHTML = "If you enjoyed this! Please consider buying me a beer!";
       } else {
+        playSound();
         shots = shots + 1;
         c = 60;
       }
