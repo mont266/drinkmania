@@ -25,7 +25,6 @@ function updateUi() {
         shots = shots + 1;
         pause();
         document.getElementById("seconds").innerHTML = "You've Completed Centurions!";
-        document.getElementById("donate").innerHTML = "If you enjoyed this! Please consider buying me a beer!";
       } else {
         playSound();
         shots = shots + 1;
