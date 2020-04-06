@@ -1,32 +1,30 @@
-///
-/// Inverse by Pixelarity
-/// pixelarity.com | hello@pixelarity.com
-/// License: pixelarity.com/license
-///
-
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
-@import 'libs/fixed-grid';
 @import 'fontawesome-all.min.css';
-@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500|Oswald:400');
+
+/*
+	Formula by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+*/
 
 // Breakpoints.
 
 	@include breakpoints((
-		default:   (1681px,   null     ),
-		xlarge:    (1281px,   1680px   ),
-		large:     (981px,    1280px   ),
-		medium:    (737px,    980px    ),
-		small:     (481px,    736px    ),
-		xsmall:    (361px,    480px    ),
-		xxsmall:   (null,     360px    )
+		xlarge:   ( 1281px,  1680px ),
+		large:    ( 981px,   1280px ),
+		medium:   ( 737px,   980px  ),
+		small:    ( 481px,   736px  ),
+		xsmall:   ( 361px,   480px  ),
+		xxsmall:  ( null,    360px  )
 	));
 
-// Color.
+// Mixins.
 
 	@mixin color($p) {
 		@include color-typography($p);
@@ -34,8 +32,10 @@
 		@include color-button($p);
 		@include color-form($p);
 		@include color-list($p);
+		@include color-section($p);
 		@include color-table($p);
-		@include color-feature-icons($p);
+		@include color-spotlight($p);
+		@include color-features($p);
 	}
 
 // Base.
@@ -54,17 +54,18 @@
 	@import 'components/image';
 	@import 'components/list';
 	@import 'components/actions';
-	@import 'components/feature-icons';
 	@import 'components/icons';
+	@import 'components/section';
 	@import 'components/table';
-	@import 'components/wrapper';
-	@import 'components/inner';
-	@import 'components/spotlights';
-	@import 'components/profiles';
+	@import 'components/spotlight';
+	@import 'components/features';
 
 // Layout.
 
 	@import 'layout/header';
-	@import 'layout/navPanel';
+	@import 'layout/menu';
 	@import 'layout/banner';
+	@import 'layout/cta';
 	@import 'layout/footer';
+	@import 'layout/wrapper';
+	@import 'layout/page-wrapper';

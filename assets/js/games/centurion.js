@@ -23,6 +23,7 @@ function updateUi() {
   if (c == 0) {
       if (shots == 99) {
         shots = shots + 1;
+        playSound();
         pause();
         document.getElementById("seconds").innerHTML = "You've Completed Centurions!";
       } else {

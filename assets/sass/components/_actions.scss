@@ -1,9 +1,3 @@
-///
-/// Inverse by Pixelarity
-/// pixelarity.com | hello@pixelarity.com
-/// License: pixelarity.com/license
-///
-
 /* Actions */
 
 	ul.actions {
@@ -20,8 +14,8 @@
 
 		&.special {
 			@include vendor('justify-content', 'center');
-			margin-left: 0;
 			width: 100%;
+			margin-left: 0;
 
 			li {
 				&:first-child {
@@ -91,7 +85,7 @@
 
 						&.icon {
 							&:before {
-								margin-left: -0.5rem;
+								margin-left: -0.5em;
 							}
 						}
 					}

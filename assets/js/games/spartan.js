@@ -25,6 +25,7 @@ function updateUi() {
   if (c == 0) {
       if (shots == 299) {
         shots = shots + 1;
+        playSound();
         pause();
         document.getElementById("seconds").innerHTML = "You've Conquered Sparta!";
       } else {
