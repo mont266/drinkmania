@@ -15,6 +15,10 @@ function start() {
 function playSound() {
   document.getElementById("audiotag1").play();
 }
+function playCountdown() {
+  document.getElementById("audiotag2").play();
+}
+
 function pause() {
   clearInterval(timer)
 }
@@ -27,9 +31,14 @@ function updateUi() {
         pause();
         document.getElementById("seconds").innerHTML = "You've Completed Centurions!";
       } else {
-        playSound();
-        shots = shots + 1;
-        c = 60;
+        if (c <= 5 && c > 0) {
+          playCountdown();
+        }
+        else {
+          playSound();
+          shots = shots + 1;
+          c = 60;
+        }
       }
   }
 
