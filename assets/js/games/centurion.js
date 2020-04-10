@@ -30,17 +30,17 @@ function updateUi() {
         playSound();
         pause();
         document.getElementById("seconds").innerHTML = "You've Completed Centurions!";
-      } else {
-        if (c <= 5 && c > 0) {
-          playCountdown();
-        }
-        else {
-          playSound();
-          shots = shots + 1;
-          c = 60;
-        }
+      }
+      else {
+        playSound();
+        shots = shots + 1;
+        c = 60;
       }
   }
+  if (c <= 5 && c > 0) {
+    playCountdown();
+  }
+}
 
   function reset() {
       clearInterval(timer);
@@ -49,4 +49,3 @@ function updateUi() {
       c = 60;
   }
   document.getElementById("shots").innerHTML = "Shots: " + shots;
-}
