@@ -57,7 +57,7 @@ var gameComplete = false;
 
 function drawCard() {
     if (gameComplete == false) {
-        var randomNumber = Math.floor(Math.random() * (cards.length));
+        var randomNumber = Math.floor(Math.random() * (cards.length - 1));
         cards = cards.filter((e, i) => i !== randomNumber);
         console.log(cards.length);
         console.log(cards[randomNumber]);
