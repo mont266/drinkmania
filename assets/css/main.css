@@ -3061,7 +3061,7 @@ input, select, textarea {
 		transition: border-bottom-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
 		border-bottom: solid 2px #eaeaea;
 		background: #ffffff;
-		height: 3.5em;
+		height: 2em;
 		left: 0;
 		line-height: 3.5em;
 		padding: 0 0 0 1.5em;

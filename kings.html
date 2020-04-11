@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>DrinkMania - Never Have I Ever</title>
+		<title>DrinkMania - Kings</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -57,11 +57,13 @@
 					<section id="banner" data-video="images/banner">
 						<div class="inner">
 							<header>
-								<h1>Never Have I Ever</h1>
-								<p id="sentence">Click "Generate" to begin!</p><br>
+								<h1>Kings</h1><br>
+								<p id="kingCount"></p><br>
+								<img id="cards" src="assets/js/games/Cards/card-placeholder.png" height="363" width="250">
+								<p id="task">Click "Draw A Card" to begin!</p><br>
 							</header>
 							<ul class="actions special">
-								<li><a href="#" class="button primary large" onclick="generate()">Generate</a></li><br>
+								<li><a href="#" class="button primary large" onclick="drawCard()">Draw A Card</a></li><br>
 							</ul>
 						</div>
 						<a href="#one" class="more">Learn More</a>
@@ -78,8 +80,7 @@
 										<header>
 											<h2>How To Play</h2>
 										</header>
-										<p>All players must hold their hands up. Everytime someone has done one of the scenarios they must put down a finger. The first player to put
-											down all 5 fingers must finish their drink. This may be repeated until everyone is shitfaced.
+										<p>
 										</p>
 									</div>
 								</div>
@@ -106,7 +107,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/games/neverhaveiever.js"></script>
+			<script src="assets/js/games/kings.js"></script>
 
 	</body>
 </html>

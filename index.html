@@ -21,7 +21,7 @@
 			gtag('config', 'UA-145322216-2');
 		</script>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" onload=load()>
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -44,7 +44,8 @@
 								<ul>
 									<a href="centurions-standard.html">Centurions Standard</a><br>
 									<a href="centurions-spartan.html">Centurions Spartan</a><br>
-									<a href="neverhaveiever.html">Never Have I Ever</a>
+									<a href="neverhaveiever.html">Never Have I Ever</a><br>
+									<a href="kings.html">Kings</a>
 								</ul>
 							</li>
 							<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q4LAQQF5Z3AJ2&source=url">Buy Me A Beer</a></li>
@@ -55,11 +56,11 @@
 					<section id="banner" data-video="images/banner">
 						<div class="inner">
 							<header>
-								<h1>Centurions</h1>
-								<p>Our first and latest addition to our drinking games collection! Centurions. Can you survive 100 shots?</p>
+								<h1 id="mainTitle">The Best Collection of Drinking Games!</h1>
+								<p id="mainPara">You'll not leave this website sober, we'll bet on it.</p>
 							</header>
 							<ul class="actions special">
-								<li><a href="centurions-standard.html" class="button primary large">Play Centurions</a></li>
+								<li><a href="centurions-standard.html" id="mainButton" class="button primary large">Play Centurions</a></li>
 							</ul>
 						</div>
 						<a href="#one" class="more">Learn More</a>
@@ -116,15 +117,16 @@
 								<div class="inner spotlight style3">
 									<div class="content">
 										<header>
-											<h2>Coming Soon...</h2>
+											<h2>Kings</h2>
 										</header>
-										<p>Sit tight whilst we work on more drinking games!</p>
+										<p>Can you stomach the Kings Cup?</p>
+										<a href="kings.html" class="button">Play Now</a>
 									</div>
 									<!--
 										Note: You can replace the image below with a JPEG or PNG. Just make sure it's exactly
 										320x340 or at least the same aspect ratio (16:17).
 									-->
-									<span class="image"><img src="images/pic03.svg" alt="" /></span>
+									<span class="image"><img src="images/pic03.jpg" alt="" /></span>
 								</div>
 							</section>
 					</div>
@@ -149,6 +151,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/header_selector.js"></script>
 
 	</body>
 </html>
