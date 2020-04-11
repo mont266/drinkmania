@@ -6,12 +6,13 @@
 -->
 <html>
 	<head>
-		<title>DrinkMania - Centurions Spartan</title>
+		<title>DrinkMania - Centurions Standard</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
-		<audio id="audiotag1" src="assets/js/games/tick.mp3" preload="auto"></audio>
+		<audio id="audiotag1" src="assets/js/games/bell.mp3" preload="auto"></audio>
+		<audio id="audiotag2" src="assets/js/games/tick.mp3" preload="auto"></audio>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145322216-2"></script>
 		<script>
@@ -56,16 +57,12 @@
 					<section id="banner" data-video="images/banner">
 						<div class="inner">
 							<header>
-								<h1>Centurions Spartan</h1>
-								<p id="seconds">0</p><br>
-								<p id="shots">Shots: 0</p>
+								<h1>Never Have I Ever</h1>
+								<p id="sentence">Click "Generate" to begin!</p><br>
 							</header>
 							<ul class="actions special">
-								<li><a href="#" class="button primary large" onclick="start()">Start</a></li><br>
-								<li><a href="#" class="button primary large" onclick="pause()">Pause</a></li><br>
-								<li><a href="#" class="button primary large" onclick="window.location.reload()">Reset</a></li>
+								<li><a href="#" class="button primary large" onclick="generate()">Generate</a></li><br>
 							</ul>
-							<a href="centurions-standard.html">Switch To Standard Mode</a>
 						</div>
 						<a href="#one" class="more">Learn More</a>
 						<video src="images/banner.mp4" muted autoplay loop playsinline></video>
@@ -75,19 +72,18 @@
 					<div id="wrapper">
 
 						<!-- One -->
-						<section id="one" class="main">
-							<div class="inner spotlight style1">
-								<div class="content">
-									<header>
-										<h2>How To Play</h2>
-									</header>
-									<p>Every time the timer reaches 0 everyone playing must take a shot. This will happen 300 times.
-										1 shot. Every Minute. 300 Minutes.
-										If Shots are too much, all players may opt to take a drink instead.
-									</p>
+							<section id="one" class="main">
+								<div class="inner spotlight style1">
+									<div class="content">
+										<header>
+											<h2>How To Play</h2>
+										</header>
+										<p>All players must hold their hands up. Everytime someone has done one of the scenarios they must put down a finger. The first player to put
+											down all 5 fingers must finish their drink. This may be repeated until everyone is shitfaced.
+										</p>
+									</div>
 								</div>
-							</div>
-						</section>
+							</section>
 					</div>
 
 				<!-- Footer -->
@@ -110,7 +106,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/games/centurion.js"></script>
+			<script src="assets/js/games/neverhaveiever.js"></script>
 
 	</body>
 </html>

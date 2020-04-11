@@ -5,7 +5,7 @@ var c = 60;
 
 function start() {
     if (shots < 100) {
-        clearInterval(timer)
+        clearInterval(timer);
         timer = setInterval(( ) =>{
           updateUi()
         }, 1000);
@@ -30,12 +30,12 @@ function updateUi() {
         playSound();
         pause();
         document.getElementById("seconds").innerHTML = "You've Completed Centurions!";
-      }
-      else {
+      } else {
         playSound();
         shots = shots + 1;
         c = 60;
       }
+      document.getElementById("shots").innerHTML = "Shots: " + shots;
   }
   if (c <= 5 && c > 0) {
     playCountdown();
@@ -48,4 +48,3 @@ function updateUi() {
       shots = 0;
       c = 60;
   }
-  document.getElementById("shots").innerHTML = "Shots: " + shots;
