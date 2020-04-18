@@ -160,7 +160,7 @@ function drawCard() {
                 document.getElementById("task").innerHTML = "Waterfall!";
             break;
             case "hearts-2":
-                document.getElementById("task").innerHTML = "Pick someone to drink."
+                document.getElementById("task").innerHTML = "Pick someone to drink.";
             break;
             case "hearts-3":
                 document.getElementById("task").innerHTML = "Take a drink.";
@@ -206,7 +206,7 @@ function drawCard() {
                 document.getElementById("task").innerHTML = "Waterfall!";
             break;
             case "spades-2":
-                document.getElementById("task").innerHTML = "Pick someone to drink."
+                document.getElementById("task").innerHTML = "Pick someone to drink.";
             break;
             case "spades-3":
                 document.getElementById("task").innerHTML = "Take a drink.";

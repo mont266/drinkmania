@@ -11,7 +11,7 @@ function load() {
             document.getElementById("mainTitle").innerHTML = "Centurions";
             document.getElementById("mainPara").innerHTML = "100 Shots in 100 minutes. Can you do it?";
             document.getElementById("mainButton").innerHTML = "PLAY CENTURIONS";
-            document.getElementById("mainButton").href='centurions.html';
+            document.getElementById("mainButton").href='centurions-standard.html';
         break;
         case 1:
             document.getElementById("mainTitle").innerHTML = "Never Have I Ever";
