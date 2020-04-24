@@ -4,7 +4,7 @@ function getRandomInt(max) {
 }
 
 function load() {
-    headerInt = getRandomInt(3);
+    headerInt = getRandomInt(5);
 
     switch(headerInt) {
         case 0:
@@ -24,6 +24,18 @@ function load() {
             document.getElementById("mainPara").innerHTML = "Will you be the one to down the kings cup?";
             document.getElementById("mainButton").innerHTML = "PLAY KINGS";
             document.getElementById("mainButton").href='kings.html';
+        break;
+        case 3:
+            document.getElementById("mainTitle").innerHTML = "Reddit Community!";
+            document.getElementById("mainPara").innerHTML = "Join our subreddit! Share some of your favourite drinking games and it might get featured on here!";
+            document.getElementById("mainButton").innerHTML = "VIEW SUBREDDIT";
+            document.getElementById("mainButton").href='https://www.reddit.com/r/DrinkMania/';
+        break;
+        case 4:
+            document.getElementById("mainTitle").innerHTML = "Deck of Cards!";
+            document.getElementById("mainPara").innerHTML = "We added a digital deck of cards so you can play your own games without a physical deck!";
+            document.getElementById("mainButton").innerHTML = "USE DECK OF CARDS";
+            document.getElementById("mainButton").href='deck-of-cards.html';
         break;
     }
 }
