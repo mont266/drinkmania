@@ -6,15 +6,17 @@
 -->
 <html>
 	<head>
-		<title>DrinkMania - Kings</title>
+		<title>DrinkMania - Most Likely</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Most Likely Question Generator">
 		<meta name="robots" content="index, follow">
-		<meta name="description" content="Classic Kings Drinking Game!">
-		<meta name="keywords" content="kings, ring of fire, drinking games, drinkmania, drinking games online,student, frat, dirty pint, kings cup, drinking games online,
-		app, mobile website, android, ios, reddit, scott montford, playing cards, university, party, friends, talisman webs">
+		<meta name="keywords" content="random generator, Most Likely, drinking game, drinkmania, generator, online, drinking game online, digital,
+		scott montford, university, student, frat, party, reddit, mobile, app, ios, android, windows, website, talisman webs">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<audio id="audiotag1" src="assets/js/games/bell.mp3" preload="auto"></audio>
+		<audio id="audiotag2" src="assets/js/games/tick.mp3" preload="auto"></audio>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145322216-2"></script>
 		<script>
@@ -62,13 +64,11 @@
 					<section id="banner" data-video="images/banner">
 						<div class="inner">
 							<header>
-								<h1>Kings</h1><br>
-								<p id="kingCount"></p><br>
-								<img id="cards" src="assets/js/games/Cards/card-placeholder.png" height="303" width="190">
-								<p id="task">Click "Draw A Card" to begin!</p><br>
+								<h1>Most Likely</h1>
+								<p id="sentence">Click "Generate" to begin!</p><br>
 							</header>
 							<ul class="actions special">
-								<li><a href="#" class="button primary large" onclick="drawCard()">Draw A Card</a></li><br>
+								<li><a href="#" class="button primary large" onclick="generate()">Generate</a></li><br>
 							</ul>
 						</div>
 						<a href="#one" class="more">Learn More</a>
@@ -85,29 +85,8 @@
 										<header>
 											<h2>How To Play</h2>
 										</header>
-										<p>Each player will take their turn to draw a card from the deck. Whatever the card says you must do. Everytime you pull a king you must pour
-											a bit of your drink into a cup. Whoever pulls the fourth and final king card must down the entire kings cup filled with a mixture of 
-											eveyone who's drawn the other 3 king card's drinks.
-											<br>
-											card rules:<br>
-											<strong>Ace:</strong> Waterfall - All players must start downing their drinks. Once the person who drew the card stops drinking, the person to their left
-											can stop, then the person to their left can stop and so on. You cannot stop drinking until the person to your right has stopped drinking.<br><br>
-											<strong>2:</strong> Fuck You - Pick someone to drink.<br><br>
-											<strong>3:</strong> Fuck Me - Take a drink yourself. <br><br>
-											<strong>4:</strong> Touch the floor - Last person to touch the floor drinks.<br><br>
-											<strong>5:</strong> Guys - All guys drink. <br><br>
-											<strong>6:</strong> Chicks - All girls drink. <br><br>
-											<strong>7:</strong> Heaven - Last to put their hand in the air drinks. <br><br>
-											<strong>8:</strong> Mate - Pick a mate. The person you pick will have to drink anytime you drink for the entirety of the game.<br><br>
-											<strong>9:</strong> Rhyme - Pick a word. Everyone well then take in turn to pick another word that rhymes with the first word. The first person to break
-											the cycle with a word that doesn't rhyme or a repeated word must drink.<br><br>
-											<strong>10:</strong> Categories - Pick a categories. Players must then take it in turn to say something related to the category. For example: "Car Manufacturers".
-											players will then take in turns to name car manufacturers. First to say a wrong answer or repeat an answer must drink.<br><br>
-											<strong>Jack:</strong> Take a drink. Simple as that<br><br>
-											<strong>Queen:</strong> Question Master. If you're the question master you can make anyone drink if they answer a question you ask them. However, if you ask someone
-											a question whilst you're the question master, they can make you drink by replying "Fuck you question master!".<br><br>
-											<strong>King:</strong> This is the ultimate card! Everytime you pull this card you must pour a bit of your drink into the kings glass. Whoever pulls the last king card
-											must finish the kings cup. This is also referred to as a 'Dirty Pint'.
+										<p>Play in a group of 3 or more people. Generate a new "Most Likely To..." scenario and every player with nominate someone who is most likely to 
+											do this. The person with the most votes must drink.
 										</p>
 									</div>
 								</div>
@@ -135,7 +114,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/games/kings.js"></script>
+			<script src="assets/js/games/mostlikely.js"></script>
 
 	</body>
 </html>

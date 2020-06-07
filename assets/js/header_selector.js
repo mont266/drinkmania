@@ -4,7 +4,7 @@ function getRandomInt(max) {
 }
 
 function load() {
-    headerInt = getRandomInt(5);
+    headerInt = getRandomInt(6);
 
     switch(headerInt) {
         case 0:
@@ -36,6 +36,12 @@ function load() {
             document.getElementById("mainPara").innerHTML = "We added a digital deck of cards so you can play your own games without a physical deck!";
             document.getElementById("mainButton").innerHTML = "USE DECK OF CARDS";
             document.getElementById("mainButton").href='deck-of-cards.html';
+        break;
+        case 5:
+            document.getElementById("mainTitle").innerHTML = "Most Likely!";
+            document.getElementById("mainPara").innerHTML = "Who's Most Likely to... You decide!";
+            document.getElementById("mainButton").innerHTML = "PLAY 'MOST LIKELY'";
+            document.getElementById("mainButton").href='most-likely.html';
         break;
     }
 }
