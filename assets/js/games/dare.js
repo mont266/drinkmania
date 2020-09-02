@@ -29,7 +29,7 @@ var cards = [
     '28-wildcard',
     '29-wildcard',
     '30-wildcard'
-];   
+];
 
 var drinks = [
     '1-drink',
@@ -47,21 +47,36 @@ var drinks = [
     '4-shots'
 ]
 
-var kingsCup = 0;
+
+function genRandomNumber(lowerLimit, upperLimit) {
+    var groupNumber = Math.floor(Math.random() * (upperLimit / 3));
+    var elementNumber = Math.floor(Math.random() * 3)
+    var randomNumber = groupNumber * 3 + elementNumber
+    if (randomNumber >= upperLimit) {
+        return upperLimit - 1
+    }
+    return randomNumber
+}
+
+function genrateBaisedRandomNumber(freq, upperLimit) {
+    var spreadArr = []
+    for (var i = 0; i < freq.length; i++) {
+        for (var j = 0; j < freq[i]; j++) {
+            spreadArr.push(i)
+        }
+    }
+    // index = Math.floor(Math.random() * freq.length)
+    index = genRandomNumber(0, freq.length)
+    return spreadArr[index]
+}
 
 function drawCard() {
-        var randomNumber = Math.floor(Math.random() * (cards.length - 1));
-        var randomNumber1 = Math.floor(Math.random() * (drinks.length - 1));
-        console.log(cards.length);
-        console.log(cards[randomNumber]);
-        document.getElementById("drinks").src = 'assets/js/games/cards/drinkordare/' + drinks[randomNumber1] + '.png';
-        document.getElementById("wildcard").src = 'assets/js/games/cards/drinkordare/' + cards[randomNumber] + '.png';
-
-        switch(cards[randomNumber]) {
-            
-        }
-
-        switch (drinks[randomNumber1]) {
-
-        }
+    cardsFreq = [2, 2, 2, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+    dringksFreq = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]//change the number to either increase or decrease the frequency 
+    var randomNumber = genrateBaisedRandomNumber(cardsFreq, cards.length)
+    var randomNumber1 = genrateBaisedRandomNumber(dringksFreq, drinks.length)
+    console.log(randomNumber1 + 1);
+    console.log(randomNumber + 1);
+    document.getElementById("drinks").src = 'assets/js/games/cards/drinkordare/' + drinks[randomNumber1] + '.png';
+    document.getElementById("wildcard").src = 'assets/js/games/cards/drinkordare/' + cards[randomNumber] + '.png';
 }
