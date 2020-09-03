@@ -51,13 +51,13 @@ img.mob-img {
 }	
 	@media screen and (max-width: 992) {
 		img.mob-img {
-			width: 100px;
+			width: 100%;
 			height: auto;
 		}		
 	}
-	@media screen and (max-width: 600) {
+	@media screen and (max-width: 768) {
 		img.mob-img {
-			width: 100px;
+			width: 100%;
 			height: auto;
 		}		
 	}
