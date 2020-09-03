@@ -45,6 +45,23 @@ table {
 	border-spacing: 0;
 }
 
+img.mob-img {
+	width: 220;
+	height: 333;
+}	
+	@media screen and (max-width: 992) {
+		img.mob-img {
+			width: 100px;
+			height: auto;
+		}		
+	}
+	@media screen and (max-width: 600) {
+		img.mob-img {
+			width: 100px;
+			height: auto;
+		}		
+	}
+
 body {
 	-webkit-text-size-adjust: none;
 }
