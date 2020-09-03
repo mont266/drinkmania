@@ -51,7 +51,7 @@ img.mob-img {
 }	
 	@media screen and (max-width: 768) {
 		img.mob-img {
-			width: 80%;
+			width: 100%;
 			height: auto;
 		}		
 	}
