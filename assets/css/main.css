@@ -46,18 +46,12 @@ table {
 }
 
 img.mob-img {
-	width: 220;
-	height: 333;
+	width: 30%;
+	height: 30%;
 }	
-	@media screen and (max-width: 992) {
-		img.mob-img {
-			width: 100%;
-			height: auto;
-		}		
-	}
 	@media screen and (max-width: 768) {
 		img.mob-img {
-			width: 100%;
+			width: 80%;
 			height: auto;
 		}		
 	}
