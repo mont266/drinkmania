@@ -89,13 +89,13 @@ function drawCard() {
                 document.getElementById("task").innerHTML = "Pick a mate that will drink anytime you drink.";
             break;
             case "clubs-9":
-                document.getElementById("task").innerHTML = "Rhyme";
+                document.getElementById("task").innerHTML = "Rhyme.";
             break;
             case "clubs-10":
-                document.getElementById("task").innerHTML = "Categories";
+                document.getElementById("task").innerHTML = "Categories.";
             break;
             case "clubs-jack":
-                document.getElementById("task").innerHTML = "Make A Rule.";
+                document.getElementById("task").innerHTML = "Make A Rule."
             break;
             case "clubs-queen":
                 document.getElementById("task").innerHTML = "You're now the question master.";
