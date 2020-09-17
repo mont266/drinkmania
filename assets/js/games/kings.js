@@ -95,7 +95,7 @@ function drawCard() {
                 document.getElementById("task").innerHTML = "Categories";
             break;
             case "clubs-jack":
-                document.getElementById("task").innerHTML = "Everyone must drink.";
+                document.getElementById("task").innerHTML = "Make A Rule.";
             break;
             case "clubs-queen":
                 document.getElementById("task").innerHTML = "You're now the question master.";
