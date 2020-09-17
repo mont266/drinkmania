@@ -4,7 +4,7 @@ function getRandomInt(max) {
 }
 
 function load() {
-    headerInt = getRandomInt(6);
+    headerInt = getRandomInt(7);
 
     switch(headerInt) {
         case 0:
@@ -42,6 +42,12 @@ function load() {
             document.getElementById("mainPara").innerHTML = "Who's Most Likely to... You decide!";
             document.getElementById("mainButton").innerHTML = "PLAY 'MOST LIKELY'";
             document.getElementById("mainButton").href='most-likely.html';
+        break;
+        case 6:
+            document.getElementById("mainTitle").innerHTML = "Drink or Dare!";
+            document.getElementById("mainPara").innerHTML = "Not for the shy!";
+            document.getElementById("mainButton").innerHTML = "PLAY 'DRINK OR DARE'";
+            document.getElementById("mainButton").href='drinkordare.html';
         break;
     }
 }
