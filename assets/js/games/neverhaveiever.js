@@ -4,7 +4,7 @@ var scenario = [
     'Walked a tight-rope',
     'Tasted breast milk as an adult',
     'Woke up with a penis drawn on your face.',
-    'Flased a bartender for a free drink.',
+    'Flashed a bartender for a free drink.',
     'Worn crocs.',
     'Stalked an ex in real life.',
     'Tasted cat/dog food.',
