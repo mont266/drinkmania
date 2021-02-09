@@ -43,11 +43,11 @@ function load() {
             document.getElementById("mainButton").innerHTML = "PLAY 'MOST LIKELY'";
             document.getElementById("mainButton").href='most-likely.html';
         break;
-        case 6:
-            document.getElementById("mainTitle").innerHTML = "Drink or Dare!";
-            document.getElementById("mainPara").innerHTML = "Not for the shy!";
-            document.getElementById("mainButton").innerHTML = "PLAY 'DRINK OR DARE'";
-            document.getElementById("mainButton").href='drinkordare.html';
-        break;
+       // case 6:
+       //     document.getElementById("mainTitle").innerHTML = "Drink or Dare!";
+       //     document.getElementById("mainPara").innerHTML = "Not for the shy!";
+       //     document.getElementById("mainButton").innerHTML = "PLAY 'DRINK OR DARE'";
+      //      document.getElementById("mainButton").href='drinkordare.html';
+      //  break;
     }
 }
